@@ -26,7 +26,7 @@
     <main>
 
         <h1>Presentación</h1>
-        <section class="presentation">
+        <div class="presentation">
             <p>
                 <b>Paella o pa el</b> es una web de recetas fundada en el año 2021 por un alumno de la Universitat
                 Oberta de Catalunya.
@@ -45,9 +45,14 @@
             <img alt="Imagen del logo paella" src="../img/discusion.jpg" />
             <p>
                 Aceptamos cualquier tipo de colaboración. Por lo que si estás interesado o interesada, puedes
-                escribirnos un mensaje en el formulario que te proporcionamos más abajo.
+                dejarnos tu email en el formulario que te proporcionamos más abajo.
             </p>
-        </section>
+            <form>
+                <label for="mail">Me gustaría que me proporcionara una dirección de correo electrónico:</label>
+                <input type="email" id="mail" name="mail">
+                <button>Enviar</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>2020 © Ignacio Vicent Salvador</p>
@@ -57,6 +62,7 @@
                 privacidad</a>
         </div>
     </footer>
+    <script src="../javascript/form-validation.js"></script>
 </body>
 
 </html>
