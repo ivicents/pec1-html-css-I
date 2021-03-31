@@ -142,7 +142,9 @@ ul li {
 }
 
 .image_main {
-    margin-top: 14vh;
+    margin-top: 12vh;
+    max-width: 35%;
+    max-height: 35%;
 }
 
 
@@ -196,6 +198,11 @@ ul li {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     border-top: 2px dotted #9b1700;
+}
+
+iframe {
+    height: 315px;
+    width: 560px;
 }
 
 .receta {
@@ -316,18 +323,127 @@ iframe {
 
 .footer-index p {
     margin-left: 10px;
-    padding-top: 0px;
+    padding-top: 0;
     text-align: left;
 }
 
 .footer-index div {
     position:absolute;
     bottom:0;
-    margin: 0px;
+    margin: 0;
     text-align: center;
 }
 
 .background_grey {
     display: inline;
     background-color: rgb(220,220,220);
+}
+
+
+/*Tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      
+    .all_navigation{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Categoria */
+
+    .category-nav-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .category-nav-item img {
+        max-height: 300px;
+        max-width: 300px;
+        object-fit: cover;
+    }
+
+    /* Detalle */
+
+    .detail-section {
+        grid-template-columns: 1fr;
+    }
+
+    iframe {
+        max-height: 250px;
+        max-width: 460px;
+    }
+
+    .my-slider img {
+        max-width: 200px;
+        max-height: 150px;
+        object-fit: cover;
+    }
+    
+}
+
+/*Mobile */
+@media only screen and (max-width: 767px) {
+
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      
+    .all_navigation{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    /* Categoria */
+
+    .category-nav-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .category-nav-item img {
+        max-height: 150px;
+        max-width: 150px;
+        object-fit: cover;
+    }
+
+    /* Detalle */
+
+    .detail-section {
+        grid-template-columns: 1fr;
+    }
+
+    iframe {
+        max-height: 200px;
+        max-width: 300px;
+        margin-left: 0;
+    }
+
+    .receta img {
+        max-height: 150px;
+        max-width: 200px;
+    }
+
+    .my-slider img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
 }
